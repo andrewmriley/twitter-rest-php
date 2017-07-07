@@ -1036,7 +1036,7 @@ class Twitter {
    *   Whether to include entities or not.
    * @see https://dev.twitter.com/docs/api/1.1/get/users/lookup
    */
-  protected function users_lookup($screen_name = NULL, $user_id = NULL,
+  public function users_lookup($screen_name = NULL, $user_id = NULL,
                                   $include_entities = NULL) {
     if ($screen_name !== NULL) {
       $params['screen_name'] = $screen_name;
